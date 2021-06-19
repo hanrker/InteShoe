@@ -1,0 +1,72 @@
+{% extends 'iShoe/base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>铁鞋状态</title>
+</head>
+
+<body>
+    {% block content %}
+    <div class="content">
+        <img class="icon" src="/statics/comm.png" alt="" width="10px" height="10px">
+        <span>铁鞋列表</span>
+        <div class="table">
+            <div class="subtag">
+                <form action="get">
+                    <input type="text" name="no">
+                    <input type="submit">
+                </form>
+                <table>
+                    <tr>
+                        <th>序号</th>
+                        <th>编号</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>$20202</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="subtag">
+                <table>
+                    <tr>
+                        <th>序号</th>
+                        <th>编号</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>$20202</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="subtag">
+                <table>
+                    <tr>
+                        <th>序号</th>
+                        <th>编号</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>$20202</td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    {% endblock %}
+
+</body>
+
+<style>
+
+
+
+</style>
+
+</html>

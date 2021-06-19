@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    {% block title %}
+    <title>Document</title>
+    {% endblock %}
+
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'iShoe/style.css' %}">
+</head>
+
+<body>
+    <div class="top">
+        <h1>铁鞋状态管理</h1>
+    </div>
+
+    <div class="body">
+        <div class="nav">
+            <div style="text-align: center;">导航</div>
+            <ul>
+                <li>
+                    <a href="">铁鞋状态</a>
+                </li>
+                <li>
+                    <a href="">铁鞋管理</a>
+                </li>
+
+                <li>
+                    <a href="">系统管理</a>
+                </li>
+                <li>
+                    <a href="">操作日志 </a>
+                </li>
+            </ul>
+        </div>
+
+        
+        <div class="content">
+            {% block content %}
+            <img class="icon" src="/statics/comm.png" alt="" width="10px" height="10px">
+            <span>铁鞋列表</span>
+            <div class="table">
+                <div class="subtag">
+                    <form action="get">
+                        <input type="text" name="no">
+                        <input type="submit">
+                    </form>
+                    <table>
+                        <tr>
+                            <th>序号</th>
+                            <th>编号</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>$20202</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="subtag">
+                    <table>
+                        <tr>
+                            <th >序号</th>
+                            <th>编号</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>$20202</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="subtag">
+                    <table>
+                        <tr>
+                            <th>序号</th>
+                            <th>编号</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>$20202</td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+            {% endblock %}
+        </div>
+
+    </div>
+    <div class="foot">
+        <p>版权所有</p>
+    </div>
+
+</body>
+
+
+</html>
